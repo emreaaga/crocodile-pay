@@ -1,4 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const createNextIntlPlugin = require('next-intl/plugin');
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    domains: ["cdn.dribbble.com"],
+  },
+};
+
+module.exports = createNextIntlPlugin()(nextConfig);

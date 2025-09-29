@@ -171,7 +171,6 @@ function CrocoMark({ className = "h-6 w-6 text-emerald-600" }: { className?: str
   );
 }
 
-/* --- SVG иконки соцсетей --- */
 function IconTelegram(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" {...props}>

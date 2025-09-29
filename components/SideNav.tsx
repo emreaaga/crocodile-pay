@@ -7,15 +7,15 @@ export const SideNav = () => {
   const routes = [
     {
       href: "/pricing",
-      label: "Pricing",
+      label: "Тарифы",
     },
     {
       href: "/sign-in",
-      label: "Sign In",
+      label: "Войти",
     },
     {
       href: "/sign-up",
-      label: "Sign Up",
+      label: "Регистрация",
     },
   ];
 

@@ -1,0 +1,59 @@
+{
+  "Home": {
+    "hero": {
+      "badge": "Payment platform with a conversion grip",
+      "title": "Online payments for your business",
+      "desc": "Cards, wallets, transfers and QR. Fast, secure, with clear integration.",
+      "cta": {
+        "primary": "Connect business",
+        "secondary": "Sign in"
+      }
+    },
+    "how": {
+      "title": "How we work",
+      "desc": "Submit a request, enable payment methods and start accepting money.",
+      "step1": {
+        "label": "Step 1",
+        "title": "Application & verification",
+        "desc": "Fill out a short form: company data and domain. We verify quickly."
+      },
+      "step2": {
+        "label": "Step 2",
+        "title": "Enable payments",
+        "desc": "Activate cards, wallets, transfers and QR. Choose what you need."
+      },
+      "step3": {
+        "label": "Step 3",
+        "title": "First payments",
+        "desc": "Receive money and see revenue in real time — in the dashboard and via API."
+      }
+    },
+    "benefits": {
+      "title": "What you get",
+      "desc": "We cut extra steps — you launch sales faster.",
+      "items": {
+        "fast": { "title": "Fast start", "desc": "Often connected within the same day*" },
+        "methods": { "title": "All payment methods", "desc": "Cards, wallets, transfers and QR" },
+        "secure": { "title": "Security", "desc": "Encryption, antifraud, 3DS 2.x" },
+        "support": { "title": "24/7 support", "desc": "Quick response, help with integration" }
+      },
+      "note": "*Timeframes may vary depending on verification and jurisdiction."
+    },
+    "cta": {
+      "title": "Ready to accept payments?",
+      "desc": "Submit an application — we’ll connect the methods and launch payment acceptance.",
+      "cta": {
+        "primary": "Submit application",
+        "secondary": "API Documentation"
+      },
+      "note": "*Timing depends on verification and jurisdiction."
+    }
+  },
+  "Navbar": {
+    "home": "Home",
+    "pricing": "Pricing",
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "dashboard": "Dashboard"
+  }
+}

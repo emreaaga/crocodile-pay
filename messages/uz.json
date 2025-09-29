@@ -1,0 +1,71 @@
+{
+  "Home": {
+    "hero": {
+      "badge": "Konversiya «ushlovi» bilan to'lov platformasi",
+      "title": "Biznesingiz uchun onlayn to'lovlar",
+      "desc": "Kartalar, hamyonlar, o'tkazmalar va QR. Tez, xavfsiz, oddiy integratsiya bilan.",
+      "cta": {
+        "primary": "Biznesni ulash",
+        "secondary": "Kabinetga kirish"
+      }
+    },
+    "how": {
+      "title": "Qanday ishlaymiz",
+      "desc": "Ariza qoldiring, kerakli usullarni ulang va pul qabul qilishni boshlang.",
+      "step1": {
+        "label": "1-qadam",
+        "title": "Ariza va verifikatsiya",
+        "desc": "Qisqa so'rovnomani to'ldirasiz: kompaniya ma'lumotlari va domen. Biz tezda tekshiramiz."
+      },
+      "step2": {
+        "label": "2-qadam",
+        "title": "To'lovlarni ulash",
+        "desc": "Kartalar, hamyonlar, o'tkazmalar va QR-ni yoqamiz. Sizga keraklisini tanlaysiz."
+      },
+      "step3": {
+        "label": "3-qadam",
+        "title": "Birinchi to'lovlar",
+        "desc": "To'lovlarni qabul qilasiz va tushumni real vaqtda ko'rasiz — kabinetda va API orqali."
+      }
+    },
+    "benefits": {
+      "title": "Nimani olasiz",
+      "desc": "Ortiqcha qadamlarni olib tashlaymiz — siz savdoni tezroq boshlaysiz.",
+      "items": {
+        "fast": {
+          "title": "Tez start",
+          "desc": "Ko‘pincha ariza kuni ulab beramiz*"
+        },
+        "methods": {
+          "title": "Barcha to'lov usullari",
+          "desc": "Kartalar, hamyonlar, o'tkazmalar va QR"
+        },
+        "secure": {
+          "title": "Xavfsizlik",
+          "desc": "Shifrlash, antifrod, 3DS 2.x"
+        },
+        "support": {
+          "title": "24/7 qo‘llab-quvvatlash",
+          "desc": "Tez javob beramiz, integratsiyada yordam beramiz"
+        }
+      },
+      "note": "*Muddat tekshiruv va yurisdiksiyaga qarab farq qilishi mumkin."
+    },
+    "cta": {
+      "title": "To'lovlarni qabul qilishga tayyormisiz?",
+      "desc": "Ariza qoldiring — kerakli usullarni ulaymiz va to‘lovlarni ishga tushiramiz.",
+      "cta": {
+        "primary": "Arizani yuborish",
+        "secondary": "API hujjatlari"
+      },
+      "note": "*Muddat tekshiruv va yurisdiksiyaga bog'liq."
+    }
+  },
+  "Navbar": {
+    "home": "Bosh sahifa",
+    "pricing": "Tariflar",
+    "signIn": "Kirish",
+    "signUp": "Ro‘yxatdan o‘tish",
+    "dashboard": "Kabinet"
+  }
+}
