@@ -102,5 +102,21 @@
     "pricing": "Pricing",
     "signIn": "Sign In",
     "signUp": "Sign Up"
+  },
+  "Auth": {
+    "email": "Email",
+    "password": "Password",
+    "signIn": {
+      "title": "Sign In",
+      "subtitle": "Enter your account credentials",
+      "button": "Sign In",
+      "noAccount": "Don't have an account?"
+    },
+    "signUp": {
+      "title": "Sign Up",
+      "subtitle": "Create a new account",
+      "button": "Register",
+      "haveAccount": "Already have an account?"
+    }
   }
 }

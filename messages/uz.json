@@ -102,5 +102,21 @@
     "pricing": "Tariflar",
     "signIn": "Kirish",
     "signUp": "Ro'yxatdan o'tish"
+  },
+  "Auth": {
+    "email": "Elektron pochta",
+    "password": "Parol",
+    "signIn": {
+      "title": "Kirish",
+      "subtitle": "Akkaunt ma'lumotlaringizni kiriting",
+      "button": "Kirish",
+      "noAccount": "Akkauntingiz yo‘qmi?"
+    },
+    "signUp": {
+      "title": "Ro‘yxatdan o‘tish",
+      "subtitle": "Yangi akkaunt yarating",
+      "button": "Ro‘yxatdan o‘tish",
+      "haveAccount": "Allaqachon akkauntingiz bormi?"
+    }
   }
 }

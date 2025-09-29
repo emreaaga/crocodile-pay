@@ -64,7 +64,7 @@ export default function Home() {
                     "focus-visible:outline-none focus-visible:ring-2 " +
                     "focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
                 )}
-                href="/dashboard"
+                href="/sign-in"
                 aria-label={t("hero.cta.secondary")}
               >
                 {t("hero.cta.secondary")}
