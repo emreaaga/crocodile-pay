@@ -3,6 +3,8 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardDescription, CardTitle } from "@/components/ui/card";
+import { Link } from "@/i18n/navigation";
+
 
 import { cn } from "@/lib/utils";
 import Footer from "@/components/Footer";
@@ -12,7 +14,7 @@ import IconCard from "@/components/icons/iconCard";
 import IconShield from "@/components/icons/iconShield";
 import IconHeadset from "@/components/icons/iconHeadset";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+import { OnboardingDialog } from "@/components/OnboardingDialog"; 
 
 export default function Home() {
   const t = useTranslations("Home");
@@ -40,19 +42,10 @@ export default function Home() {
             </p>
 
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
-              <Link
-                className={cn(
-                  buttonVariants({ size: "lg", className: "mt-0 rounded-xl" }),
-                  "bg-gradient-to-tr from-emerald-600 to-teal-500 text-white shadow-sm transition " +
-                    "hover:shadow-md hover:opacity-95 focus-visible:outline-none " +
-                    "focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
-                )}
-                href="/onboarding"
-                aria-label={t("hero.cta.primary")}
-              >
-                {t("hero.cta.primary")}
-              </Link>
+              <OnboardingDialog label={t("hero.cta.primary")} />
 
+              
+              
               <Link
                 className={cn(
                   buttonVariants({

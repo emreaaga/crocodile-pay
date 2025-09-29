@@ -104,11 +104,15 @@
     "signUp": "Регистрация"
   },
   "Auth": {
-    "email": "Эл. почта",
+    "email": "Электронная почта",
     "password": "Пароль",
+    "back": "Назад",
+    "forgotPassword": "Забыли пароль?",
+    "confirmPassword": "Подтвердите пароль",
+    "secureNote": "Ваши данные в безопасности",
     "signIn": {
-      "title": "Войти",
-      "subtitle": "Введите данные для входа в аккаунт",
+      "title": "Вход",
+      "subtitle": "Введите данные своего аккаунта",
       "button": "Войти",
       "noAccount": "Нет аккаунта?"
     },
@@ -118,5 +122,27 @@
       "button": "Зарегистрироваться",
       "haveAccount": "Уже есть аккаунт?"
     }
+  },
+  "Onboarding": {
+    "title": "Оставить заявку",
+    "fields": {
+      "name": {
+        "label": "Имя",
+        "placeholder": "Ваше имя"
+      },
+      "site": {
+        "label": "Сайт",
+        "placeholder": "example.uz"
+      },
+      "email": {
+        "label": "Почта",
+        "placeholder": "you@example.com"
+      },
+      "phone": {
+        "label": "Номер телефона",
+        "placeholder": "+998 90 123 45 67"
+      }
+    },
+    "submit": "Отправить"
   }
 }

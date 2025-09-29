@@ -106,11 +106,15 @@
   "Auth": {
     "email": "Email",
     "password": "Password",
+    "back": "Back",
+    "forgotPassword": "Forgot password?",
+    "secureNote": "Your data is safe",
+    "confirmPassword": "Confirm Password",
     "signIn": {
       "title": "Sign In",
-      "subtitle": "Enter your account credentials",
+      "subtitle": "Enter your account details",
       "button": "Sign In",
-      "noAccount": "Don't have an account?"
+      "noAccount": "Don’t have an account?"
     },
     "signUp": {
       "title": "Sign Up",
@@ -118,5 +122,27 @@
       "button": "Register",
       "haveAccount": "Already have an account?"
     }
+  },
+  "Onboarding": {
+    "title": "Submit an application",
+    "fields": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+      "site": {
+        "label": "Website",
+        "placeholder": "example.com"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "you@example.com"
+      },
+      "phone": {
+        "label": "Phone number",
+        "placeholder": "+1 234 567 890"
+      }
+    },
+    "submit": "Send"
   }
 }

@@ -106,6 +106,10 @@
   "Auth": {
     "email": "Elektron pochta",
     "password": "Parol",
+    "back": "Ortga",
+    "forgotPassword": "Parolni unutdingizmi?",
+    "secureNote": "Ma'lumotlaringiz xavfsiz",
+    "confirmPassword": "Parolni tasdiqlang",
     "signIn": {
       "title": "Kirish",
       "subtitle": "Akkaunt ma'lumotlaringizni kiriting",
@@ -118,5 +122,27 @@
       "button": "Ro‘yxatdan o‘tish",
       "haveAccount": "Allaqachon akkauntingiz bormi?"
     }
+  },
+  "Onboarding": {
+    "title": "Ariza yuborish",
+    "fields": {
+      "name": {
+        "label": "Ism",
+        "placeholder": "Ismingiz"
+      },
+      "site": {
+        "label": "Sayt",
+        "placeholder": "example.uz"
+      },
+      "email": {
+        "label": "Pochta",
+        "placeholder": "siz@example.com"
+      },
+      "phone": {
+        "label": "Telefon raqami",
+        "placeholder": "+998 90 123 45 67"
+      }
+    },
+    "submit": "Yuborish"
   }
 }
