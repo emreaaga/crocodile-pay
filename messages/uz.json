@@ -67,5 +67,35 @@
     "signIn": "Kirish",
     "signUp": "Ro‘yxatdan o‘tish",
     "dashboard": "Kabinet"
+  },
+    "Footer": {
+      "product": "Mahsulot",
+      "developers": "Dasturchilar uchun",
+      "company": "Kompaniya",
+      "legal": "Huquqiy",
+      "rights": "© {year} CrocodilePay. Barcha huquqlar himoyalangan.",
+      "links": {
+        "pricing": "Tariflar",
+        "methods": "To‘lov usullari",
+        "security": "Xavfsizlik",
+        "integrations": "Integratsiyalar",
+        "apiDocs": "API hujjatlari",
+        "examples": "Kod namunalar",
+        "status": "Holat",
+        "webhooks": "Webhooks",
+        "about": "Biz haqimizda",
+        "contacts": "Kontaktlar",
+        "jobs": "Vakansiyalar",
+        "blog": "Blog",
+        "terms": "Foydalanish shartlari",
+        "privacy": "Maxfiylik siyosati",
+        "aml": "KYC/AML",
+        "refunds": "Qaytarish siyosati"
+      },
+      "badges": {
+        "pci": "PCI DSS",
+        "3DS": "3DS 2.x",
+        "sla": "SLA 99.95%"
+      }
+    }
   }
-}

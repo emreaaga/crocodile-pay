@@ -32,10 +32,22 @@
       "title": "What you get",
       "desc": "We cut extra steps — you launch sales faster.",
       "items": {
-        "fast": { "title": "Fast start", "desc": "Often connected within the same day*" },
-        "methods": { "title": "All payment methods", "desc": "Cards, wallets, transfers and QR" },
-        "secure": { "title": "Security", "desc": "Encryption, antifraud, 3DS 2.x" },
-        "support": { "title": "24/7 support", "desc": "Quick response, help with integration" }
+        "fast": {
+          "title": "Fast start",
+          "desc": "Often connected within the same day*"
+        },
+        "methods": {
+          "title": "All payment methods",
+          "desc": "Cards, wallets, transfers and QR"
+        },
+        "secure": {
+          "title": "Security",
+          "desc": "Encryption, antifraud, 3DS 2.x"
+        },
+        "support": {
+          "title": "24/7 support",
+          "desc": "Quick response, help with integration"
+        }
       },
       "note": "*Timeframes may vary depending on verification and jurisdiction."
     },
@@ -55,5 +67,35 @@
     "signIn": "Sign in",
     "signUp": "Sign up",
     "dashboard": "Dashboard"
+  },
+  "Footer": {
+    "product": "Product",
+    "developers": "Developers",
+    "company": "Company",
+    "legal": "Legal",
+    "rights": "© {year} CrocodilePay. All rights reserved.",
+    "links": {
+      "pricing": "Pricing",
+      "methods": "Payment Methods",
+      "security": "Security",
+      "integrations": "Integrations",
+      "apiDocs": "API Documentation",
+      "examples": "Code Examples",
+      "status": "Status",
+      "webhooks": "Webhooks",
+      "about": "About Us",
+      "contacts": "Contacts",
+      "jobs": "Jobs",
+      "blog": "Blog",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "aml": "KYC/AML",
+      "refunds": "Refund Policy"
+    },
+    "badges": {
+      "pci": "PCI DSS",
+      "3ds": "3DS 2.x",
+      "sla": "SLA 99.95%"
+    }
   }
 }
