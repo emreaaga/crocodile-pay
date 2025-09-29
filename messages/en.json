@@ -97,5 +97,10 @@
       "3ds": "3DS 2.x",
       "sla": "SLA 99.95%"
     }
+  },
+  "MobileNav": {
+    "pricing": "Pricing",
+    "signIn": "Sign In",
+    "signUp": "Sign Up"
   }
 }

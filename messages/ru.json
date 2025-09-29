@@ -97,5 +97,10 @@
       "3ds": "3DS 2.x",
       "sla": "SLA 99.95%"
     }
+  },
+  "MobileNav": {
+    "pricing": "Тарифы",
+    "signIn": "Войти",
+    "signUp": "Регистрация"
   }
 }
