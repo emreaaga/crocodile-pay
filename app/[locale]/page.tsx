@@ -4,8 +4,6 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 import { Link } from "@/i18n/navigation";
-
-
 import { cn } from "@/lib/utils";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -43,9 +41,6 @@ export default function Home() {
 
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
               <OnboardingDialog label={t("hero.cta.primary")} />
-
-              
-              
               <Link
                 className={cn(
                   buttonVariants({
@@ -157,18 +152,7 @@ export default function Home() {
               <p className="mt-3 text-slate-600">{t("cta.desc")}</p>
 
               <div className="mt-6 flex flex-wrap justify-center gap-3">
-                <Link
-                  href="/onboarding"
-                  aria-label={t("cta.cta.primary")}
-                  className={cn(
-                    buttonVariants({ size: "lg", className: "rounded-xl" }),
-                    "bg-gradient-to-tr from-emerald-600 to-teal-500 text-white shadow-sm " +
-                      "hover:shadow-md hover:opacity-95 focus-visible:outline-none " +
-                      "focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
-                  )}
-                >
-                  {t("cta.cta.primary")}
-                </Link>
+                <OnboardingDialog label={t("hero.cta.primary")} />
 
                 <Link
                   href="/docs"
