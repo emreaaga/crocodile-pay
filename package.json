@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "postbuild": "next-sitemap""start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -21,6 +21,7 @@
     "lucide-react": "^0.294.0",
     "next": "14.0.3",
     "next-intl": "^4.3.9",
+    "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.0.0",

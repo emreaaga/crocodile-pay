@@ -1,4 +1,4 @@
-# NextJS Landing Page Template 
+# CrocodilePay Landing Page Template 
 
 This is a Landing Page template for [Next.js](https://nextjs.org/) 14 App Router. 
 
