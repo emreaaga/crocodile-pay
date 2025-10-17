@@ -110,6 +110,8 @@
     "errorPasswords": "Пароли не совпадают. Проверьте ещё раз.",
     "alreadyRegistered": "Этот адрес email уже зарегистрирован. Войдите в систему.",
     "somethingWentWrong": "Что-то пошло не так.",
+    "waitForApproval": "Подождите, пока администратор одобрит ваш аккаунт.",
+    "invalidCredentials": "Неверный email или пароль.",
     "email": "Электронная почта",
     "password": "Пароль",
     "back": "Назад",

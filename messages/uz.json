@@ -110,6 +110,8 @@
     "errorPasswords": "Parollar mos emas. Iltimos, qayta tekshiring.",
     "alreadyRegistered": "Bu email allaqachon ro‘yxatdan o‘tgan. Tizimga kiring.",
     "somethingWentWrong": "Qanaqadir xato bo‘ldi.",
+    "waitForApproval": "Administrator hisobingizni tasdiqlashini kuting.",
+    "invalidCredentials": "Email yoki parol noto‘g‘ri.",
     "email": "Elektron pochta",
     "password": "Parol",
     "back": "Ortga",

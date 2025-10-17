@@ -5,9 +5,37 @@ import { Link } from "@/i18n/navigation";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ArrowLeft, Mail, Lock } from "lucide-react";
+import { useState } from "react";
+import { toast } from "sonner";
+import { api } from "@/lib/axios";
 
 export default function SignInPage() {
   const t = useTranslations("Auth");
+  const [loginData, setLoginData] = useState({
+    email: '',
+    password: ''
+  });
+
+  const handleSubmit = async(e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      await api.post('/auth/login', {
+        email: loginData.email,
+        password: loginData.password
+      });
+      setLoginData({email: "", password: ""});
+
+    } catch (error: any) {
+      if (error.response?.data?.code === 'VALIDATION_ERROR') {
+        toast.error(error.response.data.message);
+      } else if(error.response?.data?.code === 'INVALID_CREDENTIALS') {
+        toast.error(t('invalidCredentials'));
+      } else if (error.response?.data?.status === 'PENDING' || error.response?.data?.status === "REJECTED") {
+        toast.info(t('waitForApproval'));
+      }
+      console.log(error);
+    }
+  };
 
   return (
     <div className="relative flex min-h-screen items-center justify-center bg-gradient-to-br from-emerald-50 via-white to-emerald-100 px-4">
@@ -25,7 +53,7 @@ export default function SignInPage() {
           {t("signIn.subtitle")}
         </p>
 
-        <form className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700">
               {t("email")}
@@ -34,6 +62,8 @@ export default function SignInPage() {
               <Mail className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
               <input
                 type="email"
+                value={loginData.email}
+                onChange={(e) => setLoginData({...loginData, email: e.target.value})}
                 placeholder="you@example.com"
                 className="pl-9 mt-1 w-full rounded-md border px-3 py-2 text-sm shadow-sm focus:border-emerald-500 focus:ring-emerald-500"
               />
@@ -48,13 +78,15 @@ export default function SignInPage() {
               <Lock className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
               <input
                 type="password"
+                value={loginData.password}
+                onChange={(e) => setLoginData({...loginData, password: e.target.value})}
                 placeholder="••••••••"
                 className="pl-9 mt-1 w-full rounded-md border px-3 py-2 text-sm shadow-sm focus:border-emerald-500 focus:ring-emerald-500"
               />
             </div>
             <div className="mt-1 text-right">
               <Link
-                href="/forgot-password"
+                href="/sign-in"
                 className="text-xs text-emerald-600 hover:underline"
               >
                 {t("forgotPassword")}
