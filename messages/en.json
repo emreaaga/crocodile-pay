@@ -124,6 +124,8 @@
     }
   },
   "Onboarding": {
+    "successMessage": "Application created successfully.",
+    "infoMessage": "Please try again later.",
     "title": "Submit an application",
     "fields": {
       "name": {

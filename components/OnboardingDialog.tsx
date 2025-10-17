@@ -43,11 +43,12 @@ export function OnboardingDialog({ label }: OnboardingDialogProps) {
         });
         setFormData({name: "" , siteUrl: "", email: "", phoneNumber: ""});
         setOpen(false);
-        toast.success("Заявка создана");
+        toast.success(t('successMessage'));
     } catch (error: any) {
       setOpen(false);
       setFormData({name: "" , siteUrl: "", email: "", phoneNumber: ""});
-      toast.info("Попробуйте позже.");
+      console.log(t('infoMessage'));
+      toast.info(t("infoMessage"));
     }
   }
 

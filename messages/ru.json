@@ -124,6 +124,8 @@
     }
   },
   "Onboarding": {
+    "successMessage": "Заявка успешно создана.",
+    "infoMessage": "Попробуйте позже.",
     "title": "Оставить заявку",
     "fields": {
       "name": {

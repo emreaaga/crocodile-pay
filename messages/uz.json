@@ -124,6 +124,8 @@
     }
   },
   "Onboarding": {
+    "successMessage": "Ariza muvaffaqiyatli yaratildi.",
+    "infoMessage": "Iltimos, keyinroq qayta urinib ko‘ring.",
     "title": "Ariza yuborish",
     "fields": {
       "name": {
