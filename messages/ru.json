@@ -104,6 +104,12 @@
     "signUp": "Регистрация"
   },
   "Auth": {
+    "name": "Ваше имя",
+    "namePlaceHolder": "Введите ваше имя",
+    "successRegister": "Аккаунт успешно создан!",
+    "errorPasswords": "Пароли не совпадают. Проверьте ещё раз.",
+    "alreadyRegistered": "Этот адрес email уже зарегистрирован. Войдите в систему.",
+    "somethingWentWrong": "Что-то пошло не так.",
     "email": "Электронная почта",
     "password": "Пароль",
     "back": "Назад",

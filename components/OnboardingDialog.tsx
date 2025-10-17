@@ -35,7 +35,7 @@ export function OnboardingDialog({ label }: OnboardingDialogProps) {
     e.preventDefault();
 
     try {
-      const response = await api.post( '/application',
+      await api.post( '/application',
         {
           name: formData.name, siteUrl: formData.siteUrl,
           email: formData.email,
@@ -47,7 +47,6 @@ export function OnboardingDialog({ label }: OnboardingDialogProps) {
     } catch (error: any) {
       setOpen(false);
       setFormData({name: "" , siteUrl: "", email: "", phoneNumber: ""});
-      console.log(t('infoMessage'));
       toast.info(t("infoMessage"));
     }
   }

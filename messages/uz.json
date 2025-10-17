@@ -104,6 +104,12 @@
     "signUp": "Ro'yxatdan o'tish"
   },
   "Auth": {
+    "name": "Ismingiz",
+    "namePlaceHolder": "Ismingizi yozing",
+    "successRegister": "Hisob muvaffaqiyatli yaratildi!",
+    "errorPasswords": "Parollar mos emas. Iltimos, qayta tekshiring.",
+    "alreadyRegistered": "Bu email allaqachon ro‘yxatdan o‘tgan. Tizimga kiring.",
+    "somethingWentWrong": "Qanaqadir xato bo‘ldi.",
     "email": "Elektron pochta",
     "password": "Parol",
     "back": "Ortga",

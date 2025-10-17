@@ -11,7 +11,6 @@ export default function SignInPage() {
 
   return (
     <div className="relative flex min-h-screen items-center justify-center bg-gradient-to-br from-emerald-50 via-white to-emerald-100 px-4">
-      {/* Кнопка Назад */}
       <Link
         href="/"
         className="absolute top-6 left-6 inline-flex items-center text-sm text-emerald-700 hover:text-emerald-900"

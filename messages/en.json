@@ -104,6 +104,12 @@
     "signUp": "Sign Up"
   },
   "Auth": {
+    "name": "Your name",
+    "namePlaceHolder": "Enter your name",
+    "successRegister": "Your account has been created successfully!",
+    "errorPasswords": "Passwords do not match. Please check again.",
+    "alreadyRegistered": "This email is already registered. Please sign in.",
+    "somethingWentWrong": "Something went wrong",
     "email": "Email",
     "password": "Password",
     "back": "Back",
