@@ -1,25 +1,37 @@
+<div align="center">
+
 # CrocodilePay Landing Page Template 
 
-This is a Landing Page template for [Next.js](https://nextjs.org/) 14 App Router. 
+### A high-performance, responsive, and multilingual template, applications built with Next.js 14 (App Router).
+
+### 🖼 Preview
+
+| Hero section | Application form | Mobile |
+|-------------|------------|-----------------|
+| ![Hero](./screenshots/landing.png) | ![Application form](./screenshots/application.png) | ![Mobile](./screenshots/mobile.jpg) |
+
+**[🚀 Live Demo (View it here)](https://demo.crocodilepay.uz)**
+> *(All screenshots are from the development build)*
+
+</div>
 
 ## Built Using and Initialised with ⚒️
-- Tailwind CSS
-- [Shadcn](https://ui.shadcn.com/) Components + Themes
-- Custom Components and Layouts that are fully responsive in both Mobile and Desktop View
-- Vercel's [Geist Font](https://vercel.com/font)
+* **[Next.js 14 (App Router)](https://nextjs.org/)**
+* **[Tailwind CSS](https://tailwindcss.com/)**
+* **[Shadcn UI](https://ui.shadcn.com/)** Components + Themes
+* Vercel's **[Geist Font](https://vercel.com/font)**
+* Custom Components and Layouts (fully responsive for Mobile and Desktop)
+* Atomic design pattern
+* Multi-language **i18n** (eng, ru, uz)
+* SEO optimization
 
-## Getting Started
+## ➡️ Getting Started
 
-First, run the development server:
+First, install the dependencies and run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
