@@ -1,22 +1,22 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { buttonVariants } from "@/components/ui/button";
-import { MobileNav } from "@/components/MobileNav";
+import MaxWidthWrapper from "@/components/atoms/MaxWidthWrapper";
+import { buttonVariants } from "@/components/atoms/ui/button";
+import { MobileNav } from "@/components/molecules/MobileNav";
 import { Link, usePathname } from "@/i18n/navigation";
 import { useTranslations, useLocale } from "next-intl";
 import { useState } from "react";
 
 const Navbar = () => {
-  const t = useTranslations("Navbar"); // берём переводы из messages
+  const t = useTranslations("Navbar");
   const isUserSignedIn = false;
 
   return (
     <nav
       className={cn(
         "sticky inset-x-0 top-0 z-40 border-b border-zinc-200",
-        "bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/60"
+        "bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/60",
       )}
     >
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-emerald-400/25 via-emerald-500/50 to-emerald-400/25" />
@@ -24,7 +24,11 @@ const Navbar = () => {
       <MaxWidthWrapper>
         <div className="flex h-14 items-center justify-between">
           {/* Бренд */}
-          <Link href="/" className="z-40 flex items-center gap-2" aria-label={t("home")}>
+          <Link
+            href="/"
+            className="z-40 flex items-center gap-2"
+            aria-label={t("home")}
+          >
             <CrocoMark className="h-6 w-6 text-emerald-600" />
             <span className="text-lg font-semibold tracking-tight sm:text-xl">
               Crocodile<span className="text-emerald-700">Pay</span>
@@ -40,7 +44,7 @@ const Navbar = () => {
               <Link
                 className={buttonVariants({
                   size: "sm",
-                  className: "sm:hidden mr-2",
+                  className: "mr-2 sm:hidden",
                 })}
                 href="/dashboard"
                 aria-label={t("dashboard")}
@@ -59,7 +63,7 @@ const Navbar = () => {
                       variant: "ghost",
                       size: "sm",
                       className:
-                        "text-slate-700 hover:text-slate-900 hover:bg-emerald-50",
+                        "text-slate-700 hover:bg-emerald-50 hover:text-slate-900",
                     })}
                   >
                     {t("pricing")}
@@ -69,7 +73,7 @@ const Navbar = () => {
                       variant: "ghost",
                       size: "sm",
                       className:
-                        "text-slate-700 hover:text-slate-900 hover:bg-emerald-50",
+                        "text-slate-700 hover:bg-emerald-50 hover:text-slate-900",
                     })}
                     href="/sign-in"
                   >
@@ -82,8 +86,8 @@ const Navbar = () => {
                         className: "rounded-lg",
                       }),
                       "bg-gradient-to-tr from-emerald-600 to-teal-500 text-white shadow-sm",
-                      "hover:shadow-md hover:opacity-95",
-                      "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
+                      "hover:opacity-95 hover:shadow-md",
+                      "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2",
                     )}
                     href="/sign-up"
                   >
@@ -120,7 +124,11 @@ const Navbar = () => {
 
 export default Navbar;
 
-function CrocoMark({ className = "h-6 w-6 text-emerald-600" }: { className?: string }) {
+function CrocoMark({
+  className = "h-6 w-6 text-emerald-600",
+}: {
+  className?: string;
+}) {
   return (
     <svg viewBox="0 0 32 32" className={className} aria-hidden="true">
       <path
@@ -153,18 +161,23 @@ function LanguageSwitcher() {
   };
 
   return (
-    <details className="relative group">
+    <details className="group relative">
       <summary
         className="flex cursor-pointer select-none items-center gap-1 rounded-md border border-slate-200 bg-white px-2.5 py-1.5 text-xs font-medium text-slate-700 shadow-sm hover:bg-slate-50"
         aria-label="Выбрать язык"
       >
         {locale.toUpperCase()}
         <svg
-          className="h-3 w-3 text-slate-500 group-open:rotate-180 transition"
+          className="h-3 w-3 text-slate-500 transition group-open:rotate-180"
           viewBox="0 0 12 12"
           aria-hidden="true"
         >
-          <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.5" />
+          <path
+            d="M2 4l4 4 4-4"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+          />
         </svg>
       </summary>
       <div className="absolute right-0 z-50 mt-2 w-28 overflow-hidden rounded-md border border-slate-200 bg-white py-1 shadow-lg">
@@ -176,7 +189,7 @@ function LanguageSwitcher() {
             onClick={(e) => handleClick(code, e)}
             className={cn(
               "block px-3 py-1.5 text-sm hover:bg-slate-50",
-              shake && code === locale && "animate-shake"
+              shake && code === locale && "animate-shake",
             )}
           >
             {label}
@@ -189,7 +202,14 @@ function LanguageSwitcher() {
 
 function IconGlobe(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.6" {...props}>
+    <svg
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      {...props}
+    >
       <circle cx="12" cy="12" r="9" />
       <path d="M3 12h18M12 3a15 15 0 0 0 0 18M12 3a15 15 0 0 1 0 18" />
     </svg>

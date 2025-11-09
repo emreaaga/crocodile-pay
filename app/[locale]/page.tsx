@@ -1,223 +1,26 @@
 "use client";
 
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { buttonVariants } from "@/components/ui/button";
-import { Card, CardDescription, CardTitle } from "@/components/ui/card";
-import { Link } from "@/i18n/navigation";
-import { cn } from "@/lib/utils";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-import IconZap from "@/components/icons/iconZap";
-import IconCard from "@/components/icons/iconCard";
-import IconShield from "@/components/icons/iconShield";
-import IconHeadset from "@/components/icons/iconHeadset";
-import { useTranslations } from "next-intl";
-import { OnboardingDialog } from "@/components/OnboardingDialog"; 
+import Footer from "@/components/organisms/layout/Footer";
+import Navbar from "@/components/organisms/layout/Navbar";
+import HeroSection from "@/components/organisms/home/HeroSection";
+import HowItWorksSection from "@/components/organisms/home/HowItWorksSection";
+import BenefitSection from "@/components/organisms/home/BenefitsSection";
+import CtaSection from "@/components/organisms/home/CtaSection";
 
 export default function Home() {
-  const t = useTranslations("Home");
 
   return (
     <>
       <Navbar />
 
       <main>
-        {/* Hero */}
-        <Section className="pt-12 sm:pt-16">
-          <MaxWidthWrapper className="flex flex-col items-center justify-center text-center">
-            <div className="mb-3 flex items-center gap-2">
-              <span className="inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-xs font-medium text-emerald-700">
-                {t("hero.badge")}
-              </span>
-            </div>
-
-            <h1 className="max-w-4xl text-5xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl">
-              {t("hero.title")}
-            </h1>
-
-            <p className="mt-5 max-w-prose text-lg text-slate-600 sm:text-2xl">
-              {t("hero.desc")}
-            </p>
-
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
-              <OnboardingDialog label={t("hero.cta.primary")} />
-              <Link
-                className={cn(
-                  buttonVariants({
-                    size: "lg",
-                    variant: "outline",
-                    className: "mt-0 rounded-xl",
-                  }),
-                  "border-emerald-300 text-emerald-700 hover:bg-emerald-50 " +
-                    "focus-visible:outline-none focus-visible:ring-2 " +
-                    "focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
-                )}
-                href="/sign-in"
-                aria-label={t("hero.cta.secondary")}
-              >
-                {t("hero.cta.secondary")}
-              </Link>
-            </div>
-          </MaxWidthWrapper>
-        </Section>
-
-        {/* How it works */}
-        <Section id="how-it-works">
-          <MaxWidthWrapper>
-            <div className="mx-auto max-w-5xl">
-              <div className="mb-8 text-center">
-                <h2 className="text-4xl font-bold text-slate-900 sm:text-5xl">
-                  {t("how.title")}
-                </h2>
-                <p className="mt-4 text-lg text-slate-600">{t("how.desc")}</p>
-              </div>
-
-              <ol className="my-2 space-y-4 pt-2 md:flex md:space-x-6 md:space-y-0 md:px-8">
-                {["step1", "step2", "step3"].map((step, i) => (
-                  <li key={i} className="md:flex-1">
-                    <div className="flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4">
-                      <span className="text-sm font-medium text-emerald-700">
-                        {t(`how.${step}.label`)}
-                      </span>
-                      <span className="text-xl font-semibold">
-                        {t(`how.${step}.title`)}
-                      </span>
-                      <span className="mt-1 text-slate-600">
-                        {t(`how.${step}.desc`)}
-                      </span>
-                    </div>
-                  </li>
-                ))}
-              </ol>
-            </div>
-          </MaxWidthWrapper>
-        </Section>
-
-        {/* Benefits */}
-        <Section id="benefits">
-          <MaxWidthWrapper>
-            <div className="mx-auto max-w-6xl">
-              <div className="mb-8 text-center">
-                <h2 className="text-4xl font-bold text-slate-900 sm:text-5xl">
-                  {t("benefits.title")}
-                </h2>
-                <p className="mt-4 text-lg text-slate-600">
-                  {t("benefits.desc")}
-                </p>
-              </div>
-
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-                <FeatureCard
-                  title={t("benefits.items.fast.title")}
-                  desc={t("benefits.items.fast.desc")}
-                  icon={<IconZap className="h-7 w-7" />}
-                />
-                <FeatureCard
-                  title={t("benefits.items.methods.title")}
-                  desc={t("benefits.items.methods.desc")}
-                  icon={<IconCard className="h-7 w-7" />}
-                />
-                <FeatureCard
-                  title={t("benefits.items.secure.title")}
-                  desc={t("benefits.items.secure.desc")}
-                  icon={<IconShield className="h-7 w-7" />}
-                />
-                <FeatureCard
-                  title={t("benefits.items.support.title")}
-                  desc={t("benefits.items.support.desc")}
-                  icon={<IconHeadset className="h-7 w-7" />}
-                />
-              </div>
-
-              <p className="mt-3 text-center text-xs text-zinc-500">
-                {t("benefits.note")}
-              </p>
-            </div>
-          </MaxWidthWrapper>
-        </Section>
-
-        {/* CTA */}
-        <Section id="cta" className="pt-0">
-          <MaxWidthWrapper>
-            <div className="relative mx-auto max-w-5xl overflow-hidden rounded-2xl border bg-white p-8 text-center shadow-sm sm:p-12">
-              <div
-                aria-hidden
-                className="pointer-events-none absolute inset-0 -z-10 opacity-10"
-                style={{
-                  background:
-                    "radial-gradient(60% 60% at 50% 30%, #10b981 0%, rgba(16,185,129,0) 60%)",
-                }}
-              />
-              <h3 className="text-2xl font-semibold">{t("cta.title")}</h3>
-              <p className="mt-3 text-slate-600">{t("cta.desc")}</p>
-
-              <div className="mt-6 flex flex-wrap justify-center gap-3">
-                <OnboardingDialog label={t("hero.cta.primary")} />
-
-                <Link
-                  href="/docs"
-                  aria-label={t("cta.cta.secondary")}
-                  className={cn(
-                    buttonVariants({
-                      size: "lg",
-                      variant: "outline",
-                      className: "rounded-xl",
-                    }),
-                    "border-emerald-300 text-emerald-700 hover:bg-emerald-50 " +
-                      "focus-visible:outline-none focus-visible:ring-2 " +
-                      "focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
-                  )}
-                >
-                  {t("cta.cta.secondary")}
-                </Link>
-              </div>
-
-              <p className="mt-3 text-xs text-zinc-500">{t("cta.note")}</p>
-            </div>
-          </MaxWidthWrapper>
-        </Section>
+        <HeroSection />
+        <HowItWorksSection />
+        <BenefitSection />
+        <CtaSection />
       </main>
 
       <Footer />
     </>
-  );
-}
-
-type SectionProps = {
-  children: React.ReactNode;
-  className?: string;
-  id?: string; 
-};
-
-function Section({ children, className = "", id }: SectionProps) {
-  return (
-    <section id={id} className={cn("py-16 sm:py-24", className)}>
-      {children}
-    </section>
-  );
-}
-
-type FeatureCardProps = {
-  title: string;
-  desc: string;
-  icon: React.ReactNode;
-};
-
-function FeatureCard({ title, desc, icon } : FeatureCardProps) {
-  return (
-    <Card
-      className="group relative flex h-full flex-col items-center rounded-2xl
-                 border border-zinc-200 bg-white p-6 text-center shadow-sm
-                 transition duration-200 hover:-translate-y-0.5 hover:shadow-lg"
-    >
-      <div className="pointer-events-none absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent" />
-      <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-emerald-50 ring-1 ring-inset ring-emerald-200 text-emerald-700">
-        {icon}
-      </div>
-      <CardTitle className="text-lg text-slate-900">{title}</CardTitle>
-      <CardDescription className="mt-2 min-h-[3.25rem] text-slate-600">
-        {desc}
-      </CardDescription>
-    </Card>
   );
 }

@@ -2,18 +2,18 @@
 
 import { Menu } from "lucide-react";
 import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/atoms/ui/button";
 import { cn } from "@/lib/utils";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/components/atoms/ui/dropdown-menu";
 import { useTranslations } from "next-intl";
 
 export const MobileNav = () => {
-  const t = useTranslations("MobileNav"); // берём переводы из messages
+  const t = useTranslations("MobileNav");
 
   const routes = [
     { href: "/pricing", label: t("pricing") },
@@ -24,14 +24,14 @@ export const MobileNav = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <button className="sm:hidden pr-4">
+        <button className="pr-4 sm:hidden">
           <Menu className="h-6 w-6" />
         </button>
       </DropdownMenuTrigger>
 
       <DropdownMenuContent
         align="end"
-        className="w-40 bg-white shadow-md rounded-md"
+        className="w-40 rounded-md bg-white shadow-md"
       >
         {routes.map((r) => (
           <DropdownMenuItem key={r.href} asChild>
@@ -39,7 +39,7 @@ export const MobileNav = () => {
               href={r.href}
               className={cn(
                 buttonVariants({ variant: "ghost", size: "sm" }),
-                "w-full justify-start"
+                "w-full justify-start",
               )}
             >
               {r.label}

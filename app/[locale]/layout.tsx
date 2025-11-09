@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { cn } from "@/lib/utils";
 import "./globals.css";
-import { Toaster } from "@/components/ui/sonner";
+import { Toaster } from "@/components/atoms/ui/sonner";
 
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "QR оплата",
     "кошельки",
     "переводы",
-    "платежный сервис"
+    "платежный сервис",
   ],
   authors: [{ name: "CrocodilePay" }],
   creator: "CrocodilePay",
@@ -39,19 +39,19 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "CrocodilePay"
-      }
+        alt: "CrocodilePay",
+      },
     ],
     locale: "ru_RU",
-    type: "website"
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "CrocodilePay | Онлайн-платежи для бизнеса",
     description:
       "CrocodilePay — платежная платформа с «хваткой» конверсии. Подключите бизнес за день.",
-    images: ["/og-image.png"]
-  }
+    images: ["/og-image.png"],
+  },
 };
 
 export function generateStaticParams() {
@@ -60,7 +60,7 @@ export function generateStaticParams() {
 
 export default async function RootLayout({
   children,
-  params: { locale }
+  params: { locale },
 }: {
   children: React.ReactNode;
   params: { locale: string };
@@ -83,12 +83,12 @@ export default async function RootLayout({
       <body
         className={cn(
           "grainy flex min-h-screen flex-col font-sans antialiased",
-          GeistSans.className
+          GeistSans.className,
         )}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
-           <Toaster />
+          <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>
