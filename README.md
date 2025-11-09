@@ -10,7 +10,7 @@
 |-------------|------------|-----------------|
 | ![Hero](./screenshots/landing.png) | ![Application form](./screenshots/application.png) | ![Mobile](./screenshots/mobile.jpg) |
 
-**[🚀 Live Demo (View it here)](https://demo.crocodilepay.uz)**
+**[🚀 Live Demo (View it here)](https://www.crocodile-pay.uz/en)**
 > *(All screenshots are from the development build)*
 
 </div>
